@@ -14,6 +14,11 @@ spring:
         format_sql: ture
         dialect: org.hibernate.dialect.MariaDBDialect
 
+  data:
+    redis:
+      port: ${REDIS_PORT:6379}
+      host: ${REDIS_HOST:localhost}
+
 springdoc:
   default-consumes-media-type: application/json;charset=UTF-8
   default-produces-media-type: application/json;charset=UTF-8
