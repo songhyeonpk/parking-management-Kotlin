@@ -36,3 +36,13 @@ logging:
     org.springframework.orm.jpa: DEBUG
     org.springframework.transaction: DEBUG
     org.hibernate.sql: DEBUG
+
+jwt:
+  secret: ${JWT_SECRET}
+  token-lifetime:
+    access-token:
+      type: MINUTE
+      duration: 30
+    refresh-token:
+      type: DAY
+      duration: 7
